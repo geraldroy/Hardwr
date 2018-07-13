@@ -1,0 +1,60 @@
+body.app-home {
+    background-color: #2196F3;
+}
+
+.btn {
+    text-transform: capitalize;
+}
+
+.app-delivery-location {
+    text-align: center;
+}
+
+.app-brand {
+    color: #2196F3;
+}
+
+.awesomplete {
+    display: block;
+}
+
+.navbar {
+    padding: 0.2rem 0.5rem;
+}
+
+.navbar-brand {
+    margin-left: 0.5rem;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.navbar-collapse {
+    padding: 1rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+select#category.form-control {
+    padding: 0;
+}
+
+.app-search-field {
+    margin-bottom: 0;
+}
+
+.app-nav-home {
+    padding-left: 25px;
+    font-size: 1rem;
+}
+
+.app-nav-home-dropdown-menu {
+    font-size: 0.9rem;
+}
+
+.card-body {
+    padding: 0.5rem;
+}
