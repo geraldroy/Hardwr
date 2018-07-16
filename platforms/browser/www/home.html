@@ -87,6 +87,7 @@
                                     <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
                                 </div>
                             </div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -109,6 +110,7 @@
                                     <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
                                 </div>
                             </div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -131,6 +133,7 @@
                                     <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
                                 </div>
                             </div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -153,6 +156,7 @@
                                     <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
                                 </div>
                             </div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -187,6 +191,7 @@
                                     <p class="app-letter-spacing app-product-description">The smart choice to suit your building needs. We promise resiliency without compromising quality and durability.</p>
                                 </div>
                             </div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -206,9 +211,10 @@
                                     <h5 class="card-text font-weight-bold text-primary app-product-title">SCG Smartboard</h5>
                                     <small>Fiber Cement Board
 									<div class="text-warning float-right">P0,000 - 0,000</div></small>
-                                    <p class="app-letter-spacing app-product-description">Suitable for different ceiling works and style. It can be use for both Interior and Exterior.</small>
+                                    <p class="app-letter-spacing app-product-description">Suitable for different ceiling works and style. It can be use for both Interior and Exterior.</p>
                                 </div>
                             </div>
+							<a href="product.html" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
                         </div>
                     </div>
                 </div>
@@ -231,6 +237,7 @@
 									<p class="app-letter-spacing app-product-description">Non-asbestos fibre-cement product composed of Portland cement, cellulose fibre and refined sand</p>
 								</div>
 							</div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
 						</div>
 					</div>
 				</div>
@@ -253,6 +260,7 @@
 									<p class="app-letter-spacing app-product-description">Made from a combination of cellulose fiber, sand, and premium quality Portland cement.</p>
 								</div>
 							</div>
+							<a href="#" class="btn btn-primary btn-block" style="padding: 0.4rem; margin-top: 5px;">View Offers</a>
 						</div>
 					</div>
 				</div>
@@ -268,6 +276,19 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/awesomplete.min.js"></script>
+
+	<script>
+	// Javascript to enable link to tab
+	var hash = document.location.hash;
+	if (hash) {
+	    $('.nav-tabs a[href="'+hash+'"]').tab('show');
+	}
+
+	// Change hash for page-reload
+	$('.nav-tabs a').on('shown.bs.tab', function (e) {
+	    window.location.hash = e.target.hash.replace("#", "#" + prefix);
+	});
+	</script>
 
 </body>
 </html>
