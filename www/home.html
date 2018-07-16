@@ -11,7 +11,7 @@
     <link href="assets/css/awesomplete.css" rel="stylesheet" type="text/css">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="app-home">
     <nav class="navbar navbar-dark bg-primary fixed-top">
         <a class="navbar-brand" href="#"><i class="fab fa-joomla"></i> Hardwr</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation" style="">
@@ -48,8 +48,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                 <div class="dropdown-menu app-nav-home-dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 35px, 0px);">
-                    <a class="dropdown-item" href="#dropdown1">Roof</a>
-                    <a class="dropdown-item" href="#">Fiber Cement Board</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#roof">Roof</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#board">Fiber Cement Board</a>
                     <a class="dropdown-item" href="#">Screw</a>
                     <a class="dropdown-item" href="#">Wood</a>
                     <a class="dropdown-item" href="#">Metal</a>
@@ -57,44 +57,208 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#profile"><i class="fas fa-truck"></i></a>
+                <a class="nav-link" data-toggle="tab" href="#truck"><i class="fas fa-truck"></i></a>
             </li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="products">
                 <div class="container" style="margin-bottom: 20px;">
                     <form class="form-inline">
-                        <input class="form-control form-control-sm col-10" type="text" placeholder="Search specific product/brand">
-                        <button class="btn btn-sm btn-link col-2" type="submit"><i class="fas fa-search"></i></button>
+                        <input class="form-control form-control-sm col-11" type="text" placeholder="Search specific product/brand">
+                        <button class="btn btn-sm btn-link col-1" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="card border-primary mb-2">
                     <div class="card-body">
-                        <div class="row">
-                            <img src="assets/img/products/cement1.jpg" class="img-thumbnai col-3" style="height: 80px; padding-right: 0;">
-                            <div class="col-9">
-                                <p class="card-text">Rizal Fortland Super</p>
-                                <small>Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin aliquam.</small>
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/cement1.jpg" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">Rizal Fortland Super</h5>
+                                    <small>Cement
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card text-white bg-primary mb-2">
+				<div class="card border-primary mb-2">
                     <div class="card-body">
-                        <div class="row">
-                            <img src="assets/img/products/cement2.jpg" class="img-thumbnai col-3" style="height: 80px; padding-right: 0;">
-                            <p class="card-text col-9">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/roof4.jpg" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">Yi Quan Roof</h5>
+                                    <small>Roof
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="card border-primary mb-2">
+                    <div class="card-body">
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/paint1.jpg" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">Boysen</h5>
+                                    <small>Paint
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary mb-2">
+                    <div class="card-body">
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/cement2.jpg" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">Coromandel Super K</h5>
+                                    <small>Cement
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">Lorem ipsum dolor sit amet, arcu nec, nibh nulla egestas condimentum eget mauris non, nisl felis sollicitudin.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile">
+            <div class="tab-pane fade" id="truck">
             </div>
-            <div class="tab-pane fade" id="dropdown1">
+			<div class="tab-pane fade" id="board">
+                <div class="container" style="padding: 0 0;">
+					<nav aria-label="breadcrumb">
+					  	<ol class="breadcrumb">
+					    	<li class="breadcrumb-item">Categories</li>
+					    	<li class="breadcrumb-item active">Fiber Cement Board</li>
+					  	</ol>
+					</nav>
+                </div>
+                <div class="card border-primary mb-2">
+                    <div class="card-body">
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/board1.png" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="far fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">Hardieflex</h5>
+                                    <small>Fiber Cement Board
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">The smart choice to suit your building needs. We promise resiliency without compromising quality and durability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-primary mb-2">
+                    <div class="card-body">
+                        <div class="container" style="padding-right: 5px; padding-left: 5px;">
+                            <div class="row">
+                                <img src="assets/img/products/board2.jpg" class="img-responsive col-3 app-product-img">
+                                <div class="col-9 app-product-title-description">
+                                    <small class="text-primary">
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                        <i class="fas fa-star float-right"></i>
+                                    </small>
+                                    <h5 class="card-text font-weight-bold text-primary app-product-title">SCG Smartboard</h5>
+                                    <small>Fiber Cement Board
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+                                    <p class="app-letter-spacing app-product-description">Suitable for different ceiling works and style. It can be use for both Interior and Exterior.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="card border-primary mb-2">
+					<div class="card-body">
+						<div class="container" style="padding-right: 5px; padding-left: 5px;">
+							<div class="row">
+								<img src="assets/img/products/board3.jpg" class="img-responsive col-3 app-product-img">
+								<div class="col-9 app-product-title-description">
+									<small class="text-primary">
+										<i class="far fa-star float-right"></i>
+										<i class="far fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+									</small>
+									<h5 class="card-text font-weight-bold text-primary app-product-title">SHERA Board</h5>
+									<small>Fiber Cement Board
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+									<p class="app-letter-spacing app-product-description">Non-asbestos fibre-cement product composed of Portland cement, cellulose fibre and refined sand</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card border-primary mb-2">
+					<div class="card-body">
+						<div class="container" style="padding-right: 5px; padding-left: 5px;">
+							<div class="row">
+								<img src="assets/img/products/board4.jpg" class="img-responsive col-3 app-product-img">
+								<div class="col-9 app-product-title-description">
+									<small class="text-primary">
+										<i class="far fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+										<i class="fas fa-star float-right"></i>
+									</small>
+									<h5 class="card-text font-weight-bold text-primary app-product-title">Gardner Board</h5>
+									<small>Fiber Cement Board
+									<div class="text-warning float-right">P0,000 - 0,000</div></small>
+									<p class="app-letter-spacing app-product-description">Made from a combination of cellulose fiber, sand, and premium quality Portland cement.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="tab-pane fade" id="roof">
                 <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
-            </div>
-            <div class="tab-pane fade" id="dropdown2">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
             </div>
         </div>
     </div>

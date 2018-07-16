@@ -1,5 +1,9 @@
-body.app-home {
+body.app-index {
     background-color: #2196F3;
+}
+
+body.app-home {
+    padding-top: 20%;
 }
 
 .btn {
@@ -57,4 +61,31 @@ select#category.form-control {
 
 .card-body {
     padding: 0.5rem;
+}
+
+.app-letter-spacing {
+    letter-spacing: 0px;
+}
+
+.app-product-img {
+    height: 100px;
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+.app-product-title-description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.app-product-title {
+    margin: 0 0 0;
+}
+
+.app-product-description {
+    margin: 0 0 0;
+}
+
+.fa-star {
+    padding-top: 3px;
 }
