@@ -89,3 +89,20 @@ select#category.form-control {
 .fa-star {
     padding-top: 3px;
 }
+
+.list-group-item {
+    padding: 0.5rem 1.25rem;
+}
+
+.app-nav-dashboard {
+    padding-left: 35px;
+    font-size: 1rem;
+}
+
+.table th {
+    padding: 0.3rem;
+}
+
+.table td {
+    padding: 0.3rem;
+}
