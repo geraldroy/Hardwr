@@ -22,9 +22,39 @@
                     </div>
                     <a href="home.html" class="btn btn-primary btn-lg btn-block">Continue</a>
                 </form>
-            </div>
+
+				<p style="margin-top: 2em;">Accredited hardware, login <a class="text-primary" data-toggle="modal" data-target="#login">here</a>.</p>
+			</div>
         </div>
     </div>
+
+	<!-- Modals -->
+	<div class="modal" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+					<form>
+						<h3 class="mb-3">Login to your Account</h3>
+						<div class="form-group">
+					      	<label style="margin-bottom: 0;">Email address</label>
+					      	<input type="email" class="form-control" placeholder="Enter email">
+					    </div>
+					    <div class="form-group">
+					      	<label style="margin-bottom: 0;">Password</label>
+					      	<input type="password" class="form-control" placeholder="Password">
+					    </div>
+						<a href="dashboard2.html" class="btn btn-primary btn-lg btn-block">Login</a>
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
