@@ -30,7 +30,7 @@
 	                <a class="nav-link" href="dashboard1.html">My Orders</a>
 	            </li>
 	            <li class="nav-item">
-	                <a class="nav-link" href="#">Logout</a>
+	                <a class="nav-link" href="index.html">Logout</a>
 	            </li>
             </ul>
         </div>
@@ -366,7 +366,7 @@
 						                Please enter your shipping address.
 					              	</div>
 					            </div>
-
+								<button class="btn btn-secondary btn-lg btn-block" type="button" onclick="registerBilling()">Register billing information</button>
 								<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="modal" data-target="#payment">Continue to checkout</button>
       						</form>
   						</div>
@@ -432,7 +432,7 @@
 							                	</div>
 							              	</div>
 							            </div>
-							            <a href="dashboard1.html" class="btn btn-primary btn-lg btn-block">Confirm Payment</a>
+							            <a href="dashboard1.html" class="btn btn-primary btn-lg btn-block" onclick="confirmPayment()">Confirm Payment</a>
 
 		                            </div>
 		                        </div>
@@ -455,6 +455,15 @@
     <script src="assets/js/awesomplete.min.js"></script>
 
 	<script>
+
+	function confirmPayment() {
+		alert("Payment completed. Thank you.");
+	}
+
+	function registerBilling() {
+		alert("Registration successful.");
+	}
+
 	// Javascript to enable link to tab
 	var hash = document.location.hash;
 	if (hash) {
